@@ -1,0 +1,40 @@
+@use 'components/timeline';
+@use 'components/circle';
+@use 'components/slider';
+@use 'components/navigation';
+@use 'components/responsive';
+
+
+:root {
+  --font-main-color: #42567A;
+  --font-range-start-color: #3877EE;
+  --font-range-end-color: #F178B6;
+  --line-color: rgba(66, 86, 122, 0.1);
+  --circle-color: rgba(66, 86, 122, 0.2);
+  --spinner-color: rgba(66, 86, 122, 0.2);
+  --bg-color: #f4f5f9;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  background: var(--bg-color);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main {
+    background: linear-gradient(var(--line-color)#e3e6ed, var(--line-color)) no-repeat 50% / 1px 100%;
+    border-left: 1px solid var(--line-color);
+    border-right: 1px solid var(--line-color);
+    font-family: PT Sans, sans-serif;
+    margin: 0 auto;
+    max-width: 1440px;
+    min-width: 300px;
+}
+

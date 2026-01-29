@@ -1,0 +1,138 @@
+.slider__mobile-title {
+  display: none;
+}
+
+.swiper-slide {
+  max-width: 320px;
+  min-height: 200px;
+  padding-right: 40px;
+  text-align: center;
+  border-right: 1px solid var(--line-color);
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--circle-color);
+  background: white;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--font-range-start-color);
+    border-color: var(--font-range-start-color);
+
+    &::before {
+      border-color: white;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border: solid var(--font-main-color);
+    border-width: 0 2px 2px 0;
+  }
+
+  &_prev {
+    left: 0;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(135deg);
+    }
+  }
+
+  &_next {
+    right: 0;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}
+  
+
+
+.slider__year {
+  margin: 0 0 15px 0;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: var(--font-range-start-color);
+}
+
+.slider__description {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--font-main-color);
+}
+
+/* Кнопки слайдера */
+.slider__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--circle-color);
+  background: white;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: var(--font-range-start-color);
+    border-color: var(--font-range-start-color);
+
+    &::before {
+      border-color: white;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 6px;
+    height: 6px;
+    border: solid var(--font-main-color);
+    border-width: 0 2px 2px 0;
+  }
+
+  &_prev {
+    left: 0;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(135deg);
+    }
+  }
+
+  &_next {
+    right: 0;
+
+    &::before {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+  }
+}

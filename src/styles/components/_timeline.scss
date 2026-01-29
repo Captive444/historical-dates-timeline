@@ -1,0 +1,95 @@
+// .app {
+//   padding-left: 320px;
+//   padding-right: 160px;
+//   background-color: var(--bg-color);
+// }
+
+.main {
+  font-family: 'PT Sans', sans-serif;
+  margin: 0 auto;
+  max-width: 1440px;
+  min-width: 300px;
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background: var(--line-color);
+    transform: translateX(-50%);
+  }
+}
+
+.historic-dates {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+    position: relative;
+    margin: 0;
+    padding-top: 170px;
+    padding-left: 80px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 120%;
+    color: var(--font-main-color);
+    max-width: 353px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 5px;
+      height: 120px;
+      background: linear-gradient(180deg, #3877EE, #EF5DA8);
+      left: 0;
+      top: 170px;
+    }
+  }
+
+  &__center {
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 600px;
+  }
+
+  &__slider {
+    // padding: 60px 80px;
+    // background: white;
+    z-index: 2;
+  }
+}
+
+.years-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 2;
+}
+
+.year {
+  font-weight: 700;
+  font-size: 200px;
+  line-height: 80%;
+  letter-spacing: -0.02em;
+
+  &-start {
+    color: var(--font-range-start-color);
+  }
+
+  &-end {
+    color: var(--font-range-end-color);
+  }
+}
