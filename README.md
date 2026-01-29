@@ -23,4 +23,5 @@ npm start
 npm run dev
 
 # 3. Откройте в браузере
-# http://localhost:3000
+Проект доступен прямо в браузере:  
+**[https://captive444.github.io/historical-dates-timeline/](https://captive444.github.io/historical-dates-timeline/)**
